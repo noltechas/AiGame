@@ -1,3 +1,5 @@
+import random
+
 class Player:
     def __init__(self, player_id, role):
         self.player_id = player_id
@@ -6,5 +8,7 @@ class Player:
         self.is_last_president = False
         self.is_last_chancellor = False
 
-    def __repr__(self):
-        return f"Player {self.player_id} ({self.role})"
+    def vote(self, game_state):
+        # AI makes a decision to vote 'Ja' or 'Nein'
+        # Placeholder logic: Randomly voting Ja or Nein
+        return 'Ja' if random.choice([True, False]) else 'Nein'
